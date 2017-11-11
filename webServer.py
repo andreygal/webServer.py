@@ -35,7 +35,7 @@ while True:
 	except IOError:
 		#Send response message for file not found
 		#For multithreading https://docs.python.org/3/howto/sockets.html
-		connectionSocket.send('HTTP/1.1 404 'File not found \n' + '\n')
+		connectionSocket.send('HTTP/1.1 404 File not found \n' + '\n')
 		#Close client socket
 		connectionSocket.close()
 
